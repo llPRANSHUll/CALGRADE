@@ -1,0 +1,316 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIT CALCULATOR</title>
+    <link rel="icon" type="image/x-icon" href="calfavicon.png" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="queries2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div class="main-div">
+      <img class="gif7" src="GIF7.GIF" alt="gif 7" />
+      <header class="nav-container">
+        <p class="heading-ul">CalGrade</p>
+        <nav class="nav">
+          <ul class="sub-heading-ul">
+            <li><a href="index.html">GPA Calculator</a></li>
+            <li><a href="cgpa.html">CGPA Calculator</a></li>
+            <input
+              id="toggle"
+              class="toggle"
+              type="checkbox"
+              onclick="changeStatus()"
+            />
+          </ul>
+        </nav>
+        <button class="nav-btns">
+          <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+          <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+        </button>
+      </header>
+
+      <div class="hero-section">
+        <h1 class="ml3">CALGRADE</h1>
+        <img class="gif6" src="GIF6.gif" alt="gif 6" />
+      </div>
+
+      <div class="table-cont">
+        <div class="table-cont-container">
+          <div class="table-container-heading">
+            Select your GPA & credits and keep adding as per your no. of
+            semesters.
+          </div>
+
+          <div class="table-container">
+            <ul class="form-list">
+              <li class="course1">
+                <span>Semester 1</span>
+                <input
+                  class="extra grades"
+                  id="grades1"
+                  type="number"
+                  step="0.5"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  id="credits1"
+                  class="credits"
+                  placeholder="GPA"
+                  min="0"
+                  max="10"
+                />
+              </li>
+
+              <li class="course2">
+                <span>Semester 2</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades2"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits2"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course3">
+                <span>Semester 3</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades3"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits3"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course4">
+                <span>Semester 4</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades4"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits4"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course5">
+                <span>Semester 5</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades5"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits5"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+            </ul>
+
+            <ul class="form-list">
+              <li class="course6">
+                <span>Semester 6</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades6"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits6"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course7">
+                <span>Semester 7</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades7"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits7"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course8">
+                <span>Semester 8</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades8"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits8"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course9">
+                <span>Semester 9</span>
+                <input
+                  type="number"
+                  class="grades"
+                  id="grades9"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits9"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+
+              <li class="course10">
+                <span id="changing-img">Semester 10</span>
+                <input
+                  type="number"
+                  class="extra1 grades"
+                  id="grades10"
+                  placeholder="Total Credits"
+                  min="0"
+                />
+                <input
+                  type="number"
+                  class="credits"
+                  id="credits10"
+                  placeholder="GPA"
+                  min="0"
+                />
+              </li>
+            </ul>
+          </div>
+          <button class="calc">Calculate</button>
+          <div class="gpa-text-holder">
+            <p class="changing-img-holder">
+              <img
+                class="changing-img"
+                id="changing-img"
+                src="Comp1.gif"
+                alt="GIFs"
+              />
+            </p>
+            <p class="gpa-text">GPA : 9.21</p>
+          </div>
+
+          <div class="scale-gpa">
+            <p class="main-scale-gpa-para">
+              Interested in applying to a foreign university for further studies
+              ?
+            </p>
+            <div class="scale-content">
+              <button>Convert to 4Pt.</button>
+              <p class="scale-gpa-text">3.6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us">
+      <p class="rectangle"></p>
+
+      <div class="content-1">
+        <div class="sub1-content-1">
+          <h2>About Us</h2>
+          <p>
+            We want to make life in college easier for everyone. We assist
+            students by providing a variety of services to help them based on
+            their changing needs.
+          </p>
+          <p class="second">Made by VITians for VITians.</p>
+        </div>
+        <div class="sub2-content-2">
+          <h2>Contact Us</h2>
+          <p>
+            <a class="about-us-names" href="mailto:shaunakmirashi@gmail.com"
+              >Shaunak Mirashi
+            </a>
+          </p>
+          <p>
+            <a class="about-us-names" href="mailto:chughpranshu2001@gmail.com"
+              >Pranshu Chugh
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="content-2">
+        <p>&copy; <span class="yea">2022</span> All Rights Reserved</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>

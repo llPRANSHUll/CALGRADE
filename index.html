@@ -1,0 +1,397 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIT CALCULATOR</title>
+    <link rel="icon" type="image/x-icon" href="calfavicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header class="nav-container">
+      <p class="heading-ul">CalGrade</p>
+      <nav class="nav">
+        <ul class="sub-heading-ul">
+          <li><a href="index.html">GPA Calculator</a></li>
+          <li><a href="cgpa.html">CGPA Calculator</a></li>
+          <input
+            id="toggle"
+            class="toggle"
+            type="checkbox"
+            onclick="changeStatus()"
+          />
+        </ul>
+      </nav>
+      <button class="nav-btns">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
+    </header>
+
+    <div class="hero-section">
+      <div class="hero-section-content">
+        <h1>Cal<span>Grade</span></h1>
+        <p>
+          Calculate your <span>GPA, CGPA</span> and convert it <br />to
+          <span>4 point </span>scale without any hassle.
+        </p>
+      </div>
+      <div class="hero-section-img">
+        <img
+          src="HeroSection1.gif"
+          alt="Hero Section 
+        "
+        />
+      </div>
+    </div>
+
+    <div class="table-cont">
+      <div class="table-cont-container">
+        <div class="table-container-heading">
+          Select your grade & credits and keep <br />adding as per your no. of
+          subjects.
+        </div>
+
+        <div class="table-container">
+          <ul class="form-list">
+            <li class="course1">
+              <span>Course 1</span>
+              <select class="extra grades" id="grades1">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select id="credits1" class="credits">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course2">
+              <span>Course 2</span>
+              <select class="grades" id="grades2">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits2">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course3">
+              <span>Course 3</span>
+              <select class="grades" id="grades3">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits3">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course4">
+              <span>Course 4</span>
+              <select class="grades" id="grades4">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits4">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course5">
+              <span>Course 5</span>
+              <select class="grades" id="grades5">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits5">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+          </ul>
+
+          <ul class="form-list">
+            <li class="course6">
+              <span>Course 6</span>
+              <select class="grades" id="grades6">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits6">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course7">
+              <span>Course 7</span>
+              <select class="grades" id="grades7">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits7">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course8">
+              <span>Course 8</span>
+              <select class="grades" id="grades8">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits8">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course9">
+              <span>Course 9</span>
+              <select class="grades" id="grades9">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits9">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+
+            <li class="course10">
+              <span id="changing-img">Course 10</span>
+              <select class="extra1 grades" id="grades10">
+                <option disabled selected value>Grades</option>
+                <option value="S">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="N">N</option>
+              </select>
+              <select class="credits" id="credits10">
+                <option value="0" disabled selected value>Credits</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="20">20</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <button class="calc">Calculate</button>
+        <div class="gpa-text-holder">
+          <p class="changing-img-holder">
+            <img
+              class="changing-img"
+              id="changing-img"
+              src="Comp1.gif"
+              alt="GIFs"
+            />
+          </p>
+          <p class="gpa-text">GPA : 9.21</p>
+        </div>
+
+        <div class="scale-gpa">
+          <p class="main-scale-gpa-para">
+            Interested in applying to a foreign university for further studies ?
+          </p>
+          <div class="scale-content">
+            <button>Convert to 4Pt.</button>
+            <p class="scale-gpa-text">3.6</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="what-section">
+      <div class="content">
+        <h1>What we do</h1>
+        <ul class="content-ul">
+          <li>
+            <p class="circle">-</p>
+            <p>Find out your GPA of any semester based on your grades</p>
+          </li>
+          <li>
+            <p class="circle">-</p>
+            <p>
+              Calculate your CGPA based on your credits and GPA of previous
+              semesters
+            </p>
+          </li>
+          <li>
+            <p class="circle">-</p>
+            <p>Convert your grade point to a 4pt. scale</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-us">
+      <p class="rectangle"></p>
+
+      <div class="content-1">
+        <div class="sub1-content-1">
+          <h2>About Us</h2>
+          <p>
+            Our goal is to make life in college easier for everyone in getting
+            grades.
+          </p>
+          <p class="second">Made by VITians for VITians.</p>
+        </div>
+        <div class="sub2-content-2">
+          <h2>Contact Us</h2>
+          <p>
+            <a class="about-us-names" href="mailto:shaunakmirashi@gmail.com"
+              >Shaunak Mirashi
+            </a>
+          </p>
+          <p>
+            <a class="about-us-names" href="mailto:chughpranshu2001@gmail.com"
+              >Pranshu Chugh
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="content-2">
+        <p>&copy; <span class="yea">2022</span> All Rights Reserved</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
